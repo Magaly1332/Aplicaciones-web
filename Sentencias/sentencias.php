@@ -94,36 +94,18 @@ while ($numero <= 51)
 
 <?php
 
-echo '<p><H1>Primer ejemplo For</H1></p>';
-
-$MFE = true;
-
-if($MFE == true) {
-
-echo 'Si existe';
-
-} else {
-
-echo 'No Existe';
-
+echo '<p><H1>Primer ejemplo For </H1></p>';
+for ($i=1; $i<=10; ++$i)
+{
+  echo sprintf("El Cuadrado de %d is %d.</br>", $i, $i*$i);
 }
-
 ?>
-
 <?php
 
-echo '<p><H1>Segundo ejemplo For</H1></p>';
+echo '<p><H1>Segundo ejemplo For </H1></p>';
 
-$MFE = true;
-
-if($MFE == true) {
-
-echo 'Si existe';
-
-} else {
-
-echo 'No Existe';
-
+for ($i = 1; $i < 6; $i++) {
+    print "<p>Bienvenidos al Alquiler de equipos de computo</p>\n";
 }
 
 ?>
@@ -132,53 +114,39 @@ echo 'No Existe';
 
 echo '<p><H1>Tercer ejemplo If</H1></p>';
 
-$MFE = true;
-
-if($MFE == true) {
-
-echo 'Si existe';
-
-} else {
-
-echo 'No Existe';
-
+for ($i = 1; $i <= 10; $i++) {
+    echo "$i, ";
 }
 
 ?>
 
 <?php
 
-echo '<p><H1>Cuarto ejemplo If</H1></p>';
+echo '<p><H1>Cuarto ejemplo For</H1></p>';
 
-$MFE = true;
-
-if($MFE == true) {
-
-echo 'Si existe';
-
-} else {
-
-echo 'No Existe';
-
+for($i= 50 ;  $i<= 100;  $i+=2) {
+    echo "$i, ";
 }
 
 ?>
 
 <?php
 
-echo '<p><H1>Quinto ejemplo If</H1></p>';
+echo '<p><H1>Quinto ejemplo For</H1></p>';
 
-$MFE = true;
+$numTablaInicial =3;
+$numTablaFinal = 5;
 
-if($MFE == true) {
+echo 'Numero inicial '.$numTablaInicial.'<br/>';
+echo 'Numero final '.$numTablaFinal.'<br/>'.'<br/>';
 
-echo 'Si existe';
-
-} else {
-
-echo 'No Existe';
-
+for ($contador=$numTablaInicial; $contador<=$numTablaFinal; $contador++){
+	echo 'Tabla del '.$contador.'<br/>';
+	for ($i=1; $i<=10; $i++){
+	echo $contador.'*'.$i.'='.$contador*$i.'<br/>';
+	}
+	echo '<br/>';
+	echo '<br/>';
 }
-
 ?>
 
