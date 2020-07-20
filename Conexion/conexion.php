@@ -1,11 +1,11 @@
 <?php
-$mysqli = new mysqli("localhost", "root", "", "prueba");
+$mysqli = new mysqli("localhost", "root", "Magaly1332", "basedd");
 if ($mysqli->connect_errno) {
-    echo "Error al conectar a MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+    echo "Fallo al conectar a MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
 }
 echo $mysqli->host_info . "\n";
 
-$mysqli = new mysqli("127.0.0.1", "root", "", "prueba", 3306);
+$mysqli = new mysqli("127.0.0.1", "root", "Magaly1332", "basedd", 3307);
 if ($mysqli->connect_errno) {
     echo "Fallo al conectar a MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
 }
